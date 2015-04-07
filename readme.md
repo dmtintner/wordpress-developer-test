@@ -3,7 +3,8 @@
 ### Get started
 * Fork the repository
 * Create a database called `sw-wordpress-test`
-* Add `sw-dev.dev` to your hosts file
+* Create the user `swtest` with the password is `123456` and give it access to the db 
+* Add `127.0.0.1 sw-dev.dev` to your hosts file
 * Add the following to httpd-vhosts.conf, making sure to use the correct path to the project
 ```
 #SW Wordpress Developer Test
@@ -28,9 +29,9 @@ All of the files that you will need for the test are located inside of the direc
 * A Product needs fields in the admin for Title, Link, Image, Background-color
 * Take each of the images from the `product-images` directory, and create a `product` from them.
 * Each one should have:
-* a different background-color
-* a different title
-* a link to a page about it
+    * a different background-color
+    * a different title
+    * a link to a page about it
 * Display these Products on the home page, and make sure that it looks good in every screen size. You can refer to the screenshot called products, in the `screenshots` directory, to see how it should look.
 
 #### Part 2
